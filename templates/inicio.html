@@ -1,0 +1,106 @@
+{% extends "imports.html" %}
+
+{% block content %}
+
+    <h1 class="display-6 text-center mb-4">Transformações Geometricas de Imagens</h1>
+
+    <div class="row">
+
+        <div class="col-lg-10 offset-lg-1">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <p class="lead">Translação</p>
+                    <form action="/translacao" method="POST">
+                        <div class="input-group mb-1 rounded" style="width: 80%;">
+                            <span class="input-group-text">X</span>
+                            <div class="input-group-append">
+                                <input name="x" id="#x" class="text" style="width: 60%">
+                            </div>
+                        </div>
+                        <div class="input-group mb-4 rounded" style="width: 80%;">
+                            <span class="input-group-text">Y</span>
+                            <div class="input-group-append">
+                                <input name="y" id="#y" class="text" style="width: 60%">
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-1 rounded" style="width: 80%;">
+                            <span class="input-group-text">dX</span>
+                            <div class="input-group-append">
+                                <input name="dx" id="#dx" class="text" style="width: 60%">
+                            </div>
+                        </div>
+                        <div class="input-group mb-4 rounded" style="width: 80%;">
+                            <span class="input-group-text">dY</span>
+                            <div class="input-group-append">
+                                <input name="dy" id="#dy" class="text" style="width: 60%">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-4">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-4">
+                    <p class="lead">Escala</p>
+                    <form action="/escala" method="POST">
+                        <div class="input-group mb-1 rounded" style="width: 80%;">
+                            <span class="input-group-text">X</span>
+                            <div class="input-group-append">
+                                <input name="x" id="#x" class="text" style="width: 60%">
+                            </div>
+                        </div>
+                        <div class="input-group mb-4 rounded" style="width: 80%;">
+                            <span class="input-group-text">Y</span>
+                            <div class="input-group-append">
+                                <input name="y" id="#y" class="text" style="width: 60%">
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-1 rounded" style="width: 80%;">
+                            <span class="input-group-text">s1</span>
+                            <div class="input-group-append">
+                                <input name="s1" id="#s1" class="text" style="width: 60%">
+                            </div>
+                        </div>
+                        <div class="input-group mb-4 rounded" style="width: 80%;">
+                            <span class="input-group-text">s2</span>
+                            <div class="input-group-append">
+                                <input name="s2" id="#s2" class="text" style="width: 60%">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-4">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-5">
+                    <p class="lead">Rotação</p>
+                    <form action="/rotacao" method="POST">
+                        <div class="input-group mb-1 rounded" style="width: 80%;">
+                            <span class="input-group-text">X</span>
+                            <div class="input-group-append">
+                                <input name="x" id="#x" class="text" style="width: 60%">
+                            </div>
+                        </div>
+                        <div class="input-group mb-4 rounded" style="width: 80%;">
+                            <span class="input-group-text">Y</span>
+                            <div class="input-group-append">
+                                <input name="y" id="#y" class="text" style="width: 60%">
+                            </div>
+                        </div>
+                        <div class="input-group mb-4 rounded" style="width: 80%;">
+                            <span class="input-group-text">âng</span>
+                            <div class="input-group-append">
+                                <input name="ang" id="#ang" class="text" style="width: 60%">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-4">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}
